@@ -27,13 +27,13 @@
         // see how what the example spreadsheet looks like:
         // https://docs.google.com/spreadsheets/d/1p0kfr1efW4E8gF1jGgT1FSXOcoN9MmYaVxZr1yM-W6s/edit?usp=sharing
         //  https://docs.google.com/spreadsheets/d/1p0kfr1efW4E8gF1jGgT1FSXOcoN9MmYaVxZr1yM-W6s/edit?usp=sharing
-        var URL = "1p0kfr1efW4E8gF1jGgT1FSXOcoN9MmYaVxZr1yM-W6s"
+        var URL = "1iUM4jvU3p8SiOTz8PXOOd3L5_Rlecex9OmQGQeMJ-ZI"
         Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true } )
       })
 
       function showInfo(data) {
         // the column headers of the info you want in your popup
-        var optionsJSON = ["placename", "photo-url"]
+        var optionsJSON = ["name"]
         // an html template for your popup
         var template = "<ul><li><a href='{{photo-url}}' target='_blank'>"
                      + "<img src='{{photo-url}}'></a></li>"
